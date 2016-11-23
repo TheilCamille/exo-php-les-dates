@@ -190,9 +190,8 @@ $dates_tableau = array(
 if((isset($_POST['mois']))&&(isset($_POST['annee']))){
     $mois_selectionne = $_POST['mois'];
     $annee_selectionne = $_POST['annee'];
-    echo '<h2>'..$annee_selectionne.'</h2>';
+    echo '<h2>'.$mois_selectionne."/".$annee_selectionne.'</h2>';
     echo craft_calendar($mois_selectionne, $annee_selectionne);
-    echo $yolo;
 };
 
 
